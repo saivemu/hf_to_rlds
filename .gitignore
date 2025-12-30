@@ -41,4 +41,3 @@ test_data/rlds/*.tfrecord
 # OS
 .DS_Store
 Thumbs.db
-

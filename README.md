@@ -185,6 +185,24 @@ This converts sample episodes and verifies the output structure, action values, 
 
 ## Usage
 
+### Quick Start: Download and Convert in One Command
+
+```bash
+# Download and convert sapanostic/so101_offline_eval dataset
+python scripts/download_and_convert.py --repo_id sapanostic/so101_offline_eval
+
+# With 3 cameras
+python scripts/download_and_convert.py --repo_id sapanostic/so101_offline_eval --num_images 3
+
+# Test with first 5 episodes
+python scripts/download_and_convert.py --repo_id sapanostic/so101_offline_eval --max_episodes 5
+
+# Custom output directory
+python scripts/download_and_convert.py --repo_id sapanostic/so101_offline_eval --output_dir ./my_rlds_data
+```
+
+### Manual: Separate Download and Convert
+
 ```bash
 # 1. Download your dataset first
 python -c "
